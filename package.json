@@ -1,0 +1,51 @@
+{
+  "name": "beam-farm-3d",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "optimize:glb": "node scripts/optimize-glb.mjs",
+    "optimize:glb:dry": "node scripts/optimize-glb.mjs --dry-run"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.6.0",
+    "@google/genai": "^2.31.0",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.3",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.43.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.1.0",
+    "@gltf-transform/extensions": "^4.1.0",
+    "@gltf-transform/functions": "^4.1.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/express": "^4.17.25",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.2",
+    "esbuild": "^0.28.0",
+    "meshoptimizer": "^0.22.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0"
+  },
+  "overrides": {
+    "esbuild": "^0.28.0",
+    "glob": "^14.0.4",
+    "minimatch": "^11.0.5"
+  }
+}

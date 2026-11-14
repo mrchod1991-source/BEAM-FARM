@@ -1,0 +1,6 @@
+{
+  "name": "Beam Farm 3D",
+  "description": "เกมจำลองฟาร์ม 3 มิติครบวงจร ปลูกผัก เลี้ยงสัตว์ ขี่ม้า ใช้โดรนเก็บเกี่ยว และสำรวจชนบท",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

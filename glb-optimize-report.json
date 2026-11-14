@@ -1,0 +1,512 @@
+[
+  {
+    "file": "2Vegetable _plot.glb",
+    "cat": "plant",
+    "before": 8498684,
+    "after": 975740,
+    "trisBefore": 81306,
+    "trisAfter": 65612,
+    "over": true,
+    "skinned": false
+  },
+  {
+    "file": "Animal feed making machine.glb",
+    "cat": "building",
+    "before": 1406452,
+    "after": 445660,
+    "trisBefore": 8654,
+    "trisAfter": 8654,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "apple tree.glb",
+    "cat": "tree",
+    "before": 6949880,
+    "after": 555320,
+    "trisBefore": 124618,
+    "trisAfter": 9468,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "assets\\models\\environments\\fallen_tree.glb",
+    "cat": "tree",
+    "before": 8025160,
+    "after": 429020,
+    "trisBefore": 149384,
+    "trisAfter": 14583,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "assets\\models\\environments\\lake_rock.glb",
+    "cat": "rock",
+    "before": 5112,
+    "after": 2968,
+    "trisBefore": 200,
+    "trisAfter": 200,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "assets\\models\\environments\\rock.glb",
+    "cat": "rock",
+    "before": 4298376,
+    "after": 135180,
+    "trisBefore": 13728,
+    "trisAfter": 3000,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "assets\\models\\environments\\seaweed.glb",
+    "cat": "plant",
+    "before": 4603868,
+    "after": 753520,
+    "trisBefore": 32111,
+    "trisAfter": 6920,
+    "over": true,
+    "skinned": false
+  },
+  {
+    "file": "assets\\models\\equipment\\fishing_rod.glb",
+    "cat": "animal",
+    "before": 5892,
+    "after": 2960,
+    "trisBefore": 240,
+    "trisAfter": 240,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "assets\\models\\fish\\fish3.glb",
+    "cat": "animal",
+    "before": 4105436,
+    "after": 540592,
+    "trisBefore": 7406,
+    "trisAfter": 7406,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "assets\\models\\fish\\lake_fish.glb",
+    "cat": "animal",
+    "before": 4105436,
+    "after": 540592,
+    "trisBefore": 7406,
+    "trisAfter": 7406,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "ax_.glb",
+    "cat": "prop",
+    "before": 7431512,
+    "after": 121504,
+    "trisBefore": 63613,
+    "trisAfter": 3177,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "baankhonsuan.glb",
+    "cat": "building",
+    "before": 11129676,
+    "after": 728640,
+    "trisBefore": 132241,
+    "trisAfter": 20063,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "bakery-interior.glb",
+    "cat": "building",
+    "before": 2574964,
+    "after": 607896,
+    "trisBefore": 45538,
+    "trisAfter": 20374,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "chicken.glb",
+    "cat": "animal",
+    "before": 9759888,
+    "after": 492864,
+    "trisBefore": 3844,
+    "trisAfter": 3844,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "cow.glb",
+    "cat": "animal",
+    "before": 7557348,
+    "after": 594584,
+    "trisBefore": 19219,
+    "trisAfter": 19219,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "drone.glb",
+    "cat": "animal",
+    "before": 2377188,
+    "after": 467020,
+    "trisBefore": 32714,
+    "trisAfter": 10738,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "duck.glb",
+    "cat": "animal",
+    "before": 6562108,
+    "after": 332884,
+    "trisBefore": 20828,
+    "trisAfter": 20828,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "fire-escape.glb",
+    "cat": "prop",
+    "before": 115776,
+    "after": 16652,
+    "trisBefore": 852,
+    "trisAfter": 192,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "Fish-buying shop.glb",
+    "cat": "animal",
+    "before": 3418176,
+    "after": 436656,
+    "trisBefore": 41152,
+    "trisAfter": 15224,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "fishing_rod.glb",
+    "cat": "animal",
+    "before": 603464,
+    "after": 58228,
+    "trisBefore": 4716,
+    "trisAfter": 3536,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "grass.glb",
+    "cat": "plant",
+    "before": 4219032,
+    "after": 49624,
+    "trisBefore": 27764,
+    "trisAfter": 3000,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "hoe.glb",
+    "cat": "prop",
+    "before": 4036356,
+    "after": 31984,
+    "trisBefore": 482,
+    "trisAfter": 482,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "horse.glb",
+    "cat": "animal",
+    "before": 2180204,
+    "after": 308248,
+    "trisBefore": 15363,
+    "trisAfter": 14403,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "hua-hin-sign.glb",
+    "cat": "building",
+    "before": 1163872,
+    "after": 87624,
+    "trisBefore": 1360,
+    "trisAfter": 1360,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "jungle_house_3d_model_free.glb",
+    "cat": "building",
+    "before": 15214792,
+    "after": 599032,
+    "trisBefore": 278292,
+    "trisAfter": 33127,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "lcoconut tree.glb",
+    "cat": "tree",
+    "before": 4445684,
+    "after": 415448,
+    "trisBefore": 6630,
+    "trisAfter": 5995,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "lemon_tree_-1.glb",
+    "cat": "tree",
+    "before": 1927892,
+    "after": 509432,
+    "trisBefore": 13939,
+    "trisAfter": 13939,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "lemon_tree_.glb",
+    "cat": "tree",
+    "before": 1429200,
+    "after": 491044,
+    "trisBefore": 13939,
+    "trisAfter": 13939,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "man.glb",
+    "cat": "animal",
+    "before": 862132,
+    "after": 172304,
+    "trisBefore": 14020,
+    "trisAfter": 14020,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "merchant_rigged.glb",
+    "cat": "building",
+    "before": 2727312,
+    "after": 256976,
+    "trisBefore": 17542,
+    "trisAfter": 17542,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "mountain_hiking_trail.glb",
+    "cat": "prop",
+    "before": 1396336,
+    "after": 183780,
+    "trisBefore": 54756,
+    "trisAfter": 3089,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "oak_trees.glb",
+    "cat": "tree",
+    "before": 9347356,
+    "after": 1575968,
+    "trisBefore": 14475,
+    "trisAfter": 7405,
+    "over": true,
+    "skinned": false
+  },
+  {
+    "file": "Orange tree.glb",
+    "cat": "tree",
+    "before": 10606540,
+    "after": 807932,
+    "trisBefore": 47636,
+    "trisAfter": 18276,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "PieOven.glb",
+    "cat": "building",
+    "before": 3176044,
+    "after": 270728,
+    "trisBefore": 2385,
+    "trisAfter": 1777,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "pine_tree.glb",
+    "cat": "tree",
+    "before": 5464704,
+    "after": 855416,
+    "trisBefore": 3391,
+    "trisAfter": 375,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "power-line.glb",
+    "cat": "prop",
+    "before": 1637408,
+    "after": 188544,
+    "trisBefore": 25360,
+    "trisAfter": 7600,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "produce-storage-facility.glb",
+    "cat": "animal",
+    "before": 4010612,
+    "after": 1223392,
+    "trisBefore": 1504,
+    "trisAfter": 1504,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "river_rock.glb",
+    "cat": "rock",
+    "before": 2826448,
+    "after": 91352,
+    "trisBefore": 3054,
+    "trisAfter": 1000,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "sheep.glb",
+    "cat": "animal",
+    "before": 2042056,
+    "after": 351660,
+    "trisBefore": 4372,
+    "trisAfter": 4372,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "sickle.glb",
+    "cat": "prop",
+    "before": 1745908,
+    "after": 52480,
+    "trisBefore": 624,
+    "trisAfter": 624,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "spooky-lamp-post.glb",
+    "cat": "prop",
+    "before": 1532092,
+    "after": 123636,
+    "trisBefore": 19576,
+    "trisAfter": 3383,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "tractor.glb",
+    "cat": "building",
+    "before": 1687044,
+    "after": 445076,
+    "trisBefore": 32784,
+    "trisAfter": 19987,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "train-station.glb",
+    "cat": "building",
+    "before": 9987612,
+    "after": 764008,
+    "trisBefore": 47532,
+    "trisAfter": 28018,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "two-story-timber-house.glb",
+    "cat": "building",
+    "before": 2561504,
+    "after": 423380,
+    "trisBefore": 37883,
+    "trisAfter": 21171,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "utility-pole.glb",
+    "cat": "prop",
+    "before": 75652,
+    "after": 16108,
+    "trisBefore": 700,
+    "trisAfter": 268,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "village.glb",
+    "cat": "building",
+    "before": 1533624,
+    "after": 514736,
+    "trisBefore": 17522,
+    "trisAfter": 17522,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "water-tower.glb",
+    "cat": "building",
+    "before": 4128036,
+    "after": 391048,
+    "trisBefore": 15288,
+    "trisAfter": 15288,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "wateringcan.glb",
+    "cat": "prop",
+    "before": 1078732,
+    "after": 44804,
+    "trisBefore": 17736,
+    "trisAfter": 3000,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "windmill.glb",
+    "cat": "building",
+    "before": 3577208,
+    "after": 360620,
+    "trisBefore": 17420,
+    "trisAfter": 17420,
+    "over": false,
+    "skinned": false
+  },
+  {
+    "file": "woman.glb",
+    "cat": "animal",
+    "before": 14027948,
+    "after": 2256188,
+    "trisBefore": 300000,
+    "trisAfter": 300000,
+    "over": false,
+    "skinned": true
+  },
+  {
+    "file": "Wooden_ fence.glb",
+    "cat": "prop",
+    "before": 370640,
+    "after": 18728,
+    "trisBefore": 14526,
+    "trisAfter": 2996,
+    "over": false,
+    "skinned": false
+  }
+]

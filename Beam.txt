@@ -1,0 +1,214 @@
+===============================================================
+บันทึกสถานะและรายการอัปเดตโปรเจกต์: Beam Farm 3D
+อัปเดตล่าสุด: 2026-10-29
+===============================================================
+
+///////////////////////// รายการเดิม (ทำเสร็จครบทุกข้อแล้ว) /////////////////////////
+[✔] 1. เพิ่มปุ่มล็อกคนไม่ให้เดินไปมาได้ และเพิ่มตัวละครผู้หญิงชาวไร่ (man.glb / woman.glb)
+[✔] 2. สามารถให้คนเข้าบ้านเมื่อยืนหน้าบ้าน (พร้อมฉากภายในบ้าน + ระบบทำอาหารฟื้นพลังงาน)
+[✔] 3. พื้นที่ที่ไม่มีหญ้า (ฝั่งตะวันตก Map 2) เอาไว้ปลดล็อกสร้างพื้นที่ต่อไปเมื่อถึง Lv.10
+[✔] 4. เพิ่มเพชร (Gems 💎) เอาไว้ซื้อของใหญ่ๆ สิ่งปลูกสร้างพรีเมียม และสัตว์พิเศษ
+[✔] 5. แปลงปลูกผักสามารถขยับวางไว้ตรงไหนก็ได้ในเกม (โหมดย้ายแปลงอิสระ)
+[✔] 6. เพิ่มหมาและแมว (DogAnimal.ts, CatAnimal.ts) รวมถึงม้าและแกะ (HorseAnimal.ts, SheepAnimal.ts)
+[✔] 7. มีรางวัลโบนัสเหรียญ + เพชร + พลังงานสูงสุด เมื่อปลดล็อกเลเวลใหม่ (LevelUpModal)
+[✔] 8. มีโหมดกล้องครบทั้ง Iso (มุมสูงเฉียง), TPP (บุคคลที่สามมองรอบตัวกว้าง) และ FPP (บุคคลที่หนึ่งสมจริงจากสายตาตัวละคร)
+
+///////////////////////// รายการที่อัปเดตและเพิ่มเข้าไปใหม่ทั้งหมด /////////////////////////
+[✔] 9. รวมปุ่มคำสั่งเข้าหมวด "สิ่งก่อสร้าง & จัดฟาร์ม" และแถบ "อุปกรณ์ทำฟาร์ม" ให้เป็นระเบียบใช้งานง่าย:
+    - แถบสิ่งก่อสร้าง & จัดฟาร์ม: ย้ายแปลง, ขยายที่ดิน, กระเป๋า/ร้านค้า, สมุดคู่มือเควสต์, แผนที่/เดินทางด่วน, ตั้งค่าเสียง, โหลดแอป และสลับมุมกล้อง
+    - แถบอุปกรณ์ทำฟาร์ม: จอบ, เมล็ดพืช/ปลูกต้นไม้, บัวรดน้ำ, เคียว, ขวาน, โดรนอัตโนมัติ (DroneAutoHarvest) และโหมดเก็บเกี่ยวจำนวนมาก (HarvestMode + HarvestHUD)
+[✔] 10. ระบบ "เริ่มเล่นเกมใหม่" รีเซ็ตจริง 100% (saveReset.ts):
+    - ล้างข้อมูลเซฟทั้งหมดใน localStorage พร้อมระงับการเขียนเซฟทับก่อนรีโหลดหน้า เพื่อให้เริ่มใหม่ที่ค่าเริ่มต้นจริงๆ (โดยยังคงค่าภาษาที่ผู้เล่นเลือกไว้)
+[✔] 11. รองรับหน้าจอคอมพิวเตอร์และมือถือเต็มรูปแบบ (Desktop & Mobile Portrait/Landscape):
+    - รองรับ Safe-Area Insets (safe-top, safe-bottom, safe-left, safe-right) สำหรับหน้าจอมือถือมีรอยบาก/ขอบโค้ง
+    - แถบเมนูเลื่อนแนวนอนลื่นไหล ข้อความไม่ตกบรรทัดซ้อนกัน ปุ่มสัมผัสขนาดเหมาะสมกับนิ้วมือ
+    - หน้าต่างโมดอลปรับรูปแบบอัตโนมัติ (Bottom-Sheet บนมือถือ / Centered Card บนคอมพิวเตอร์)
+    - รองรับปุ่ม Esc บนคีย์บอร์ด และปุ่มย้อนกลับของ Android (Hardware Back / popstate) เพื่อปิดหน้าต่างหรือยกเลิกโหมดวางของโดยไม่หลุดออกจากตัวเกม
+[✔] 12. รองรับ Web, PWA และ Android APK พร้อมชุดไอคอนมือถือครบทุกขนาด:
+    - เพิ่มไอคอน PNG มาตรฐานและ Maskable ครบ 15 ไฟล์ (favicon 32x32, apple-touch-icon 180x180, pwa 192/512, pwa-maskable 192/512 และ icons 48..512px)
+    - ตั้งค่า Web App Manifest (standalone, orientation: any) และหน้าต่างติดตั้งแอป PWA (PWAInstallModal + usePWAInstall)
+    - เพิ่มไฟล์โครงสร้าง Android APK ทั้งแบบ Capacitor (capacitor.config.json) และ TWA Digital Asset Links (public/.well-known/assetlinks.json) พร้อมคู่มือสร้างไฟล์ APK (ANDROID_APK_GUIDE.md)
+[✔] 13. รองรับ 2 ภาษา (ไทย / English) แยกออกจาก Gameplay Logic:
+    - เพิ่มโมดูลภาษา src/i18n/translations.ts และ src/i18n/LanguageContext.tsx
+    - กดสลับปุ่ม TH / EN ได้ทันทีจากแถบด้านบนหรือในหน้าตั้งค่า แปลครบทั้ง UI, เครื่องมือ, พืชผัก 6 ชนิด, ต้นไม้ 6 ชนิด, สิ่งปลูกสร้าง 21 แบบ, สัตว์เลี้ยง, หินแร่, โซนขยายที่ดิน 5 โซน, สูตรอาหาร 6 เมนู และข้อความแจ้งเตือนการวางวัตถุ
+[✔] 14. รองรับการเล่นออฟไลน์ในส่วนที่เตรียมข้อมูลไว้แล้ว (Offline-Ready):
+    - Service Worker (Workbox) พรีแคชไฟล์ระบบหลัก (HTML/JS/CSS/ไอคอน/ภาพ) และแคชโมเดล 3D (.glb) แบบ CacheFirst (เฉพาะ HTTP 200)
+    - เพิ่มระบบ "เตรียมข้อมูลออฟไลน์" (src/utils/offlineAssets.ts) ให้กดดาวน์โหลดโมเดล .glb ทั้ง 19 ไฟล์เก็บลงเครื่องล่วงหน้า พร้อมแถบความคืบหน้า ตัวนับไฟล์แคช ขนาดพื้นที่จริง และปุ่มล้างแคช
+    - เพิ่มตัวตรวจสถานะเครือข่ายแบบเรียลไทม์ (useOnlineStatus.ts) แสดงป้ายสถานะออฟไลน์และสลับใช้โมเดล Procedural สำรองอัตโนมัติหากไฟล์ยังไม่ถูกแคช
+[✔] 15. ระบบตรวจสอบ GLB ล่วงหน้า, จัดการ Memory/GPU, Mobile Performance และกัน Event ซ้ำ:
+    - เพิ่ม src/utils/glbValidator.ts (inspectGLBBuffer, loadValidatedGLTF, optimizeGLTFSceneForDevice, disposeHierarchySafely) ตรวจสอบไบนารี .glb ทุกไฟล์ก่อนส่งเข้า Three.js ป้องกันไฟล์ 0 ไบต์หรือหน้า HTML 404 ทำให้เอนจินแครช
+    - ปรับประสิทธิภาพมือถือใน FarmScene.tsx (จำกัด DPR <= 1.35, Shadow Map 512, หญ้า 2,400 ใบ, คุมงบประมาณเงาตามจำนวนสามเหลี่ยม, รองรับ ResizeObserver และ WebGL Context Lost/Restored)
+    - ป้องกันการล้าง Geometry แม่แบบของ GLB ที่แชร์ผ่าน SkeletonUtils.clone (isSharedGlbGeometry) ขณะคืนหน่วยความจำของ Procedural Geometry ที่ถูกลบ
+    - ป้องกัน Event ซ้ำบนมือถือใน FarmCameraControls.ts (บล็อก Synthetic Mouse Event 500ms หลัง Touch + Debounce การคลิกเลือกวัตถุ 80ms)
+[✔] 16. บันทึกผลการทดสอบจริงครบทุก Milestone:
+    - เพิ่มไฟล์ MILESTONE_TEST_LOG.md บันทึกคำสั่งและผลการตรวจสอบจริงครบทั้ง 4 Milestone (TypeScript 0 errors, Production Build ผ่าน, ตรวจ PNG 15 ไฟล์, ตรวจ GLB 19 ไฟล์ และสแกนโค้ด 80 ไฟล์)
+
+
+===============================================================
+โครงสร้างโปรเจกต์ปัจจุบัน: Beam Farm 3D
+===============================================================
+ชื่อ: Beam Farm 3D (เกมจำลองฟาร์ม 3 มิติ)
+เทคโนโลยี: React 19 + TypeScript + Three.js + Vite + vite-plugin-pwa + Tailwind CSS 4
+แพลตฟอร์ม: Web (Desktop & Mobile) / PWA (Offline-Ready) / Android APK (Capacitor & TWA)
+ภาษาที่รองรับ: 2 ภาษา (ภาษาไทย TH / English EN)
+จำนวนไฟล์โปรเจกต์จริง: 133 ไฟล์ (ประมาณ 89.41 MB รวมโมเดล 3D .glb 19 ไฟล์ และไอคอน 15 ไฟล์)
+รันโปรเจกต์: npm install  ->  npm run dev  (พอร์ต 3000)  |  สร้างไฟล์จริง: npm run build
+===============================================================
+
+beam-farm-3d/
+│
+├── index.html                      หน้า HTML หลัก (พร้อม PWA Meta, Apple Touch Icon & Viewport Fit)
+├── package.json                    รายการไลบรารีและสคริปต์ (dev / build / preview / lint)
+├── bun.lock                        ไฟล์ล็อกเวอร์ชันไลบรารี
+├── vite.config.ts                  ตั้งค่า Vite + VitePWA (Manifest + Workbox GLB CacheFirst)
+├── tsconfig.json                   ตั้งค่า TypeScript
+├── metadata.json                   ข้อมูลแอปสำหรับ AI Studio
+├── capacitor.config.json           [ใหม่] ตั้งค่าแพ็กเกจแอป Android APK ผ่าน Capacitor (com.beamfarm3d.app)
+├── ANDROID_APK_GUIDE.md            [ใหม่] คู่มือวิธีสร้างไฟล์ติดตั้ง Android APK (Capacitor & Bubblewrap TWA)
+├── MILESTONE_TEST_LOG.md           [ใหม่] บันทึกผลการตรวจสอบและทดสอบจริงครบทั้ง 4 Milestone
+├── BEAM_FARM_3D_ARCHITECTURE.txt   เอกสารสถาปัตยกรรมเชิงลึกของระบบเกม
+├── Beam.txt                        เอกสารสรุปรายการอัปเดตและโครงสร้างไฟล์โปรเจกต์ (ไฟล์นี้)
+├── .env.example                    ตัวอย่างไฟล์ตั้งค่าตัวแปรแวดล้อม
+├── .gitignore
+│
+├── scripts/                        สคริปต์ช่วยสร้างโมเดลสิ่งก่อสร้าง
+│   ├── generate_structures.ts
+│   └── generate_more_structures.ts
+│
+├── public/                         ไฟล์สาธารณะ (ไอคอนมือถือ, แผนที่, Digital Asset Links และโมเดล 3D .glb)
+│   ├── .well-known/
+│   │   └── assetlinks.json         [ใหม่] ยืนยันโดเมนสำหรับ Android Trusted Web Activity (TWA APK)
+│   ├── icons/                      [ใหม่] ชุดไอคอนแอปมือถือหลายขนาดสำหรับ Android / Web Launcher
+│   │   ├── icon-48x48.png
+│   │   ├── icon-72x72.png
+│   │   ├── icon-96x96.png
+│   │   ├── icon-128x128.png
+│   │   ├── icon-144x144.png
+│   │   ├── icon-152x152.png
+│   │   ├── icon-192x192.png
+│   │   ├── icon-384x384.png
+│   │   └── icon-512x512.png
+│   ├── favicon-32x32.png           [ใหม่] ไอคอนแท็บเบราว์เซอร์ 32x32
+│   ├── apple-touch-icon.png        [ใหม่] ไอคอนหน้าจอโฮมสำหรับ iOS / iPadOS 180x180
+│   ├── pwa-192x192.png             [ใหม่] ไอคอนหลัก PWA 192x192
+│   ├── pwa-512x512.png             [ใหม่] ไอคอนหลัก PWA ความละเอียดสูง 512x512
+│   ├── pwa-maskable-192x192.png    [ใหม่] ไอคอน Adaptive Maskable สำหรับ Android 192x192
+│   ├── pwa-maskable-512x512.png    [ใหม่] ไอคอน Adaptive Maskable สำหรับ Android 512x512
+│   ├── icon.svg                    ไอคอนเวกเตอร์ต้นฉบับ
+│   ├── farm-map.jpg                รูปแผนที่อ้างอิงภูมิประเทศ
+│   └── *.glb (รวม 19 ไฟล์)         โมเดล 3D ที่เตรียมพร้อมสำหรับการแคชเล่นออฟไลน์:
+│       ├── man.glb, woman.glb, drone.glb, cow.glb, horse.glb
+│       ├── baankhonsuan.glb, jungle_house_3d_model_free.glb, bakery-interior.glb
+│       ├── village.glb, produce-storage-facility.glb, train-station.glb
+│       ├── water-tower.glb, windmill.glb, tractor.glb, Wooden_ fence.glb
+│       └── spooky-lamp-post.glb, power-line.glb, utility-pole.glb, fire-escape.glb
+│
+└── src/                            โค้ดหลักของเกม (แยก Module ตามหน้าที่ชัดเจน)
+    │
+    ├── main.tsx                    จุดเริ่มต้นของแอป
+    ├── App.tsx                     คอมโพเนนต์ราก ครอบด้วย LanguageProvider (2 ภาษา) + FarmWorld
+    ├── index.css                   สไตล์รวม + ยูทิลิตี้ Safe-Area Insets และ Scrollbar มือถือ
+    │
+    ├── i18n/                       [ใหม่] ระบบรองรับ 2 ภาษา (แยกออกจาก Gameplay Logic & Entity)
+    │   ├── translations.ts         คลังคำแปลและฟังก์ชันแปลงชื่อไอเทม/สิ่งปลูกสร้าง/แจ้งเตือน (TH / EN)
+    │   └── LanguageContext.tsx     React Context สำหรับสลับภาษาและจดจำค่าใน localStorage
+    │
+    ├── assets/                     ระบบจัดการเสียงและเท็กซ์เจอร์
+    │   ├── audio/
+    │   │   ├── backgroundMusic.ts  ดนตรีประกอบฉาก
+    │   │   └── soundEffects.ts     เอฟเฟกต์เสียงการกระทำ
+    │   └── textures/
+    │       ├── loaders.ts          ตัวโหลดเท็กซ์เจอร์และโมเดล (เชื่อมผ่าน glbValidator)
+    │       └── procedural.ts       สร้างเท็กซ์เจอร์ด้วยโค้ด
+    │
+    ├── core/                       โมดูลแกนกลางของฉาก 3 มิติ
+    │   ├── CameraController.ts     จัดการมุมมองกล้อง
+    │   ├── Lighting.ts             จัดการระบบแสงเงา
+    │   ├── Performance.ts          ตรวจสอบและปรับแต่งประสิทธิภาพการเรนเดอร์
+    │   └── SceneManager.tsx        จัดการวงจรชีวิตฉาก
+    │
+    ├── game/                       โมดูลสภาพแวดล้อมและตัวละครแยกตามโดเมน
+    │   ├── environment/
+    │   │   ├── GrassField.ts, GridOverlay.ts, MapZones.ts, Terrain.ts, WorldTrees.ts
+    │   └── player/
+    │       ├── PlayerAnimations.ts, PlayerController.ts, PlayerMesh.ts
+    │
+    ├── components/
+    │   ├── FarmWorld.tsx           ตัวเชื่อมหลักระหว่างสถานะเกม, ฉาก 3D, UI และการรองรับปุ่ม Back/Esc
+    │   │
+    │   ├── 3d/                     ส่วนแสดงผลฉาก 3 มิติ (Three.js — แยก Visual ออกจาก AI/Entity)
+    │   │   ├── FarmScene.tsx               ฉากหลัก (รองรับ Mobile DPR/Shadow Budget + WebGL Context Recovery)
+    │   │   ├── FarmEnvironment.ts          แสงและบรรยากาศตามเวลา/สภาพอากาศ
+    │   │   ├── FarmTerrain.ts              ภูมิประเทศหลัก (สระน้ำ แม่น้ำ ถนน หลุมทราย)
+    │   │   ├── FarmTerrainMap2.ts          ภูมิประเทศส่วนขยายฝั่งตะวันตก (ปลดล็อก Lv.10)
+    │   │   ├── FarmGrass.ts                ทุ่งหญ้า InstancedMesh (ปรับจำนวนอัตโนมัติบนมือถือ)
+    │   │   ├── FarmTrees.ts                ต้นไม้ผลและไม้ยืนต้น 3D
+    │   │   ├── FarmRocks.ts                ก้อนหินและแร่ในฟาร์ม
+    │   │   ├── FarmCrops.ts                แปลงผักและระยะการเติบโตของพืช
+    │   │   ├── FarmBuildings.ts            สิ่งก่อสร้างประจำฟาร์ม
+    │   │   ├── FarmHouses.ts               สิ่งปลูกสร้างทั้ง 21 แบบ (ตรวจ GLB + Fallback อัตโนมัติ)
+    │   │   ├── FarmPlayer.ts               ตัวละครชาวไร่ชาย/หญิง + มุมมอง Iso/TPP/FPP
+    │   │   ├── FarmAnimals.ts              ระบบ AI การเดิน/เล็มหญ้า และการจัดการ GPU ของสัตว์เลี้ยง
+    │   │   ├── FarmCameraControls.ts       ควบคุมกล้องเมาส์/ทัชสกรีน + ระบบกัน Touch/Mouse Event ซ้ำ
+    │   │   ├── FarmGridOverlay.ts          กริดช่วยวางของและตรวจสอบตำแหน่ง
+    │   │   ├── DroneAutoHarvest.tsx        โดรนอัตโนมัติช่วยรดน้ำและเก็บเกี่ยว (รองรับ 2 ภาษา)
+    │   │   ├── HarvestSelection.tsx        กรอบไฮไลต์เลือกแปลงเก็บเกี่ยวแบบกลุ่ม
+    │   │   ├── AnimalRigs.ts               ชั้นส่งออกความเข้ากันได้ย้อนหลังของโมเดลสัตว์
+    │   │   ├── structures/
+    │   │   │   ├── ChickenCoop.ts          เล้าไก่แบบละเอียดพร้อมไก่เคลื่อนไหว
+    │   │   │   └── FarmInfrastructure.ts   โมเดลสำรอง Procedural (แท็งก์น้ำ กังหัน เสาไฟ ฯลฯ)
+    │   │   └── animals/                    โมเดลและแอนิเมชันสัตว์แต่ละชนิด (ตรวจ GLB ผ่าน glbValidator)
+    │   │       ├── index.ts, types.ts
+    │   │       ├── ChickenAnimal.ts, PigAnimal.ts, GoatAnimal.ts
+    │   │       ├── CowAnimal.ts, HorseAnimal.ts, SheepAnimal.ts
+    │   │       └── DogAnimal.ts, CatAnimal.ts
+    │   │
+    │   └── ui/                     ส่วนหน้าจอผู้ใช้ (React UI — รองรับ Desktop/Mobile & 2 ภาษา)
+    │       ├── TopHUD.tsx                  แถบด้านบน (วัน/เวลา, เหรียญ, เพชร, ปุ่มสลับภาษา TH/EN, ป้ายออฟไลน์, เมนูลัด)
+    │       ├── BottomDock.tsx              แถบอุปกรณ์ทำฟาร์มด้านล่าง (จอบ, เมล็ด/ต้นไม้, บัวรดน้ำ, เคียว, ขวาน, โดรน, โหมดเก็บเกี่ยว)
+    │       ├── BuildUI.tsx                 แผงสิ่งก่อสร้าง & จัดฟาร์ม (รวมเครื่องมือย้ายแปลง/ขยายที่ดิน/ตั้งค่า/โหลดแอปไว้ครบ)
+    │       ├── HarvestHUD.tsx              แถบควบคุมโหมดเลือกเก็บเกี่ยวหลายแปลงพร้อมกัน
+    │       ├── InventoryModal.tsx          หน้าต่างคลังเก็บของและร้านค้าเมล็ดพันธุ์/กล้าไม้
+    │       ├── LandExpansionModal.tsx      หน้าต่างปลดล็อกขยายพื้นที่ฟาร์ม (รวมโซน Lv.10)
+    │       ├── HouseInteriorModal.tsx      หน้าต่างเข้าชมภายในบ้าน 3D และครัวทำอาหารเพิ่มพลังงาน
+    │       ├── LevelUpModal.tsx            หน้าต่างฉลองเลเวลอัปและรับโบนัสเหรียญ/เพชร
+    │       ├── QuestGuideModal.tsx         สมุดบันทึกภารกิจและสารานุกรมฟาร์ม
+    │       ├── SettingsModal.tsx           ตั้งค่าชื่อฟาร์ม, เสียง, ภาษา, เตรียมข้อมูลออฟไลน์ 3D และเริ่มเกมใหม่
+    │       ├── PWAInstallModal.tsx         หน้าต่างแนะนำการติดตั้งแอปลงมือถือ/คอมพิวเตอร์และเตรียมออฟไลน์
+    │       ├── CustomIcons.tsx             ชุดไอคอน SVG เฉพาะของเกม
+    │       └── LoadingScreen.tsx           หน้าจอโหลดเข้าเกม (รองรับ 2 ภาษา)
+    │
+    ├── hooks/                      ตรรกะของเกมและสถานะแพลตฟอร์ม (แยกออกจาก UI และ 3D Rendering)
+    │   ├── useFarmEconomy.ts       ระบบเศรษฐกิจ เหรียญ เพชร เลเวล พลังงาน และการซื้อขาย
+    │   ├── useFarmPlots.ts         ระบบแปลงปลูกผัก การปลูก รดน้ำ เก็บเกี่ยว และย้ายแปลงอิสระ
+    │   ├── useFarmTrees.ts         ระบบปลูกต้นไม้ เก็บผล ตัดไม้ และตรวจชน
+    │   ├── useFarmPlacement.ts     ระบบวาง/ย้ายสิ่งปลูกสร้างและสัตว์เลี้ยง
+    │   ├── useHarvestMode.ts       ระบบเลือกแปลงเพื่อเก็บเกี่ยวผลผลิตจำนวนมาก
+    │   ├── useHarvestQueue.ts      คิวจัดการลำดับการเก็บเกี่ยวต่อเนื่อง
+    │   ├── useFloatingNotices.ts   ข้อความแจ้งเตือนลอยบนหน้าจอ
+    │   ├── usePWAInstall.ts        ตรวจจับสถานะการติดตั้งแอป PWA (Android/iOS/Desktop)
+    │   └── useOnlineStatus.ts      [ใหม่] ตรวจจับสถานะออนไลน์/ออฟไลน์แบบเรียลไทม์
+    │
+    ├── data/
+    │   └── terrainFeatures.ts      ข้อมูลภูมิประเทศกลางที่ใช้อ้างอิงร่วมกันระหว่างการวาดฉากและตรวจชน
+    │
+    ├── types/
+    │   └── game.ts                 โครงสร้างข้อมูล ค่าคงที่ พืช ต้นไม้ สัตว์ หิน และสิ่งปลูกสร้าง 21 ชนิด
+    │
+    └── utils/                      ฟังก์ชันช่วยเหลือเฉพาะทาง
+        ├── glbValidator.ts         [ใหม่] ตรวจไบนารีไฟล์ .glb ก่อนโหลด, ปรับแต่งเงา/เท็กซ์เจอร์มือถือ และคืนหน่วยความจำ GPU
+        ├── offlineAssets.ts        [ใหม่] จัดการพรีโหลดโมเดล 3D เก็บลง Cache Storage สำหรับเล่นออฟไลน์
+        ├── saveReset.ts            กลไกรีเซ็ตเซฟเกมทั้งหมดอย่างปลอดภัยเมื่อกดเริ่มเกมใหม่
+        ├── audio.ts                ควบคุมระบบเสียง Web Audio
+        ├── textures.ts             สร้างเท็กซ์เจอร์พื้นผิวด้วยโค้ด
+        └── calculus.ts             สูตรคณิตศาสตร์สำหรับการเคลื่อนที่อย่างนุ่มนวล
+
+===============================================================
+การไหลของข้อมูลและหลักสถาปัตยกรรมสำคัญ
+===============================================================
+1. main.tsx -> App.tsx (LanguageProvider) -> FarmWorld.tsx
+2. แยกหน้าที่อย่างเป็นระบบ:
+   - UI (components/ui/* + i18n/*) แยกออกจาก Gameplay Logic (hooks/*)
+   - AI & Entity State (types/game.ts + FarmAnimals.ts state) แยกออกจาก Visual Model (animals/* + FarmHouses.ts)
+   - การโหลดโมเดล 3D ทั้งหมดผ่านตัวกรอง glbValidator.ts พร้อมระบบสำรอง Procedural เมื่อออฟไลน์
+   - รองรับการทำงานข้ามแพลตฟอร์มครบทั้ง Web, PWA (Service Worker Offline Cache) และ Android APK

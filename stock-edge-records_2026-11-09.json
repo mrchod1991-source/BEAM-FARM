@@ -1,0 +1,156 @@
+{
+  "app": "Stock Edge Analyzer",
+  "version": "1.4.0",
+  "schemaVersion": 2,
+  "exportedAt": "2026-11-09T03:17:02.784Z",
+  "totalRecords": 3,
+  "records": [
+    {
+      "id": "sample_nvda_a_plus",
+      "schemaVersion": 2,
+      "ticker": "NVDA",
+      "companyName": "NVIDIA Corporation",
+      "market": "US",
+      "timeframe": "Daily (D1)",
+      "tradingStyle": "MOMENTUM",
+      "setupDate": "2026-11-07",
+      "checklist": {
+        "market_trend_aligned": true,
+        "higher_highs_lows": true,
+        "clear_support_resistance": true,
+        "volume_expansion": true,
+        "relative_strength": true,
+        "catalyst_earnings_safety": true,
+        "risk_reward_viable": true,
+        "no_fomo_chasing": true
+      },
+      "structure": {
+        "pattern_vcp": true,
+        "pattern_base_breakout": true,
+        "ma_bullish_stack": true,
+        "ma_above_200": true,
+        "momentum_rsi_power": true,
+        "momentum_macd_bullish": true
+      },
+      "scores": {
+        "technicalScore": 92,
+        "catalystScore": 95,
+        "riskExecutionScore": 88,
+        "marketScore": 85
+      },
+      "trade": {
+        "entryPrice": 135.5,
+        "stopLossPrice": 128.2,
+        "targetPrice": 154,
+        "accountSize": 50000,
+        "riskPercent": 1
+      },
+      "thesisNotes": "Textbook 4-week VCP contraction above 20 EMA. Dominant semiconductor AI leader with 120% YoY data center revenue acceleration.",
+      "riskFactors": "High beta sensitivity if Fed interest rate rhetoric sparks broad tech selloff.",
+      "executionPlan": "Buy 50% on break of $135.50 pivot, add remaining 50% once volume confirms over 45M shares.",
+      "tags": [
+        "AI Leader",
+        "Breakout",
+        "A+ Setup"
+      ],
+      "createdAt": "2026-11-07T03:16:59.900Z",
+      "updatedAt": "2026-11-09T03:16:59.900Z"
+    },
+    {
+      "id": "sample_aapl_b_setup",
+      "schemaVersion": 2,
+      "ticker": "AAPL",
+      "companyName": "Apple Inc.",
+      "market": "US",
+      "timeframe": "Daily (D1)",
+      "tradingStyle": "PULLBACK",
+      "setupDate": "2026-11-04",
+      "checklist": {
+        "market_trend_aligned": true,
+        "higher_highs_lows": true,
+        "clear_support_resistance": true,
+        "volume_expansion": false,
+        "relative_strength": false,
+        "catalyst_earnings_safety": true,
+        "risk_reward_viable": true,
+        "no_fomo_chasing": true
+      },
+      "structure": {
+        "pattern_pullback_ema": true,
+        "ma_above_200": true,
+        "momentum_rsi_power": true
+      },
+      "scores": {
+        "technicalScore": 74,
+        "catalystScore": 70,
+        "riskExecutionScore": 78,
+        "marketScore": 75
+      },
+      "trade": {
+        "entryPrice": 226.5,
+        "stopLossPrice": 219,
+        "targetPrice": 245,
+        "accountSize": 30000,
+        "riskPercent": 1
+      },
+      "thesisNotes": "Orderly pullback into rising 50-day SMA with volume drying up. Solid support floor near 219-220 pivot.",
+      "riskFactors": "Hardware upgrade cycle pacing may moderate growth expectations.",
+      "executionPlan": "Enter on bullish hammer reversal candle confirmation on daily close.",
+      "tags": [
+        "MegaCap",
+        "Pullback",
+        "B Setup"
+      ],
+      "createdAt": "2026-11-04T03:16:59.900Z",
+      "updatedAt": "2026-11-09T03:16:59.900Z"
+    },
+    {
+      "id": "sample_delta_set",
+      "schemaVersion": 2,
+      "ticker": "DELTA.BK",
+      "companyName": "Delta Electronics (Thailand)",
+      "market": "SET",
+      "timeframe": "Daily (D1)",
+      "tradingStyle": "SWING",
+      "setupDate": "2026-11-01",
+      "checklist": {
+        "market_trend_aligned": false,
+        "higher_highs_lows": true,
+        "clear_support_resistance": true,
+        "volume_expansion": true,
+        "relative_strength": true,
+        "catalyst_earnings_safety": false,
+        "risk_reward_viable": true,
+        "no_fomo_chasing": false
+      },
+      "structure": {
+        "pattern_base_breakout": true,
+        "ma_above_200": true,
+        "momentum_rsi_power": true
+      },
+      "scores": {
+        "technicalScore": 68,
+        "catalystScore": 65,
+        "riskExecutionScore": 62,
+        "marketScore": 55
+      },
+      "trade": {
+        "entryPrice": 142,
+        "stopLossPrice": 133,
+        "targetPrice": 162,
+        "accountSize": 500000,
+        "riskPercent": 1.5
+      },
+      "thesisNotes": "SET index is ranging sideways but DELTA is demonstrating clear independent relative strength with power flow.",
+      "riskFactors": "High valuation multiple and potential index weight rebalancing shifts.",
+      "executionPlan": "Tighten trailing stop to 20 EMA after first +5% leg up.",
+      "tags": [
+        "Thai SET",
+        "High Beta",
+        "Swing"
+      ],
+      "createdAt": "2026-11-01T03:16:59.900Z",
+      "updatedAt": "2026-11-09T03:16:59.900Z"
+    }
+  ]
+}
